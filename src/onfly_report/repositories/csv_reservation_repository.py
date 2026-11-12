@@ -41,12 +41,7 @@ class CsvReservationRepository:
                 if missing:
                     raise InputFileError(f"colunas obrigatórias ausentes: {', '.join(missing)}")
 
-                rows: list[RawRow] = []
-                for values in reader:
-                    rows.append(RawRow(line_number=reader.line_num, values=values))
-                    if len(rows) == 200:
-                        break
-                return rows
+                return [RawRow(line_number=reader.line_num, values=values) for values in reader]
         except FileNotFoundError as err:
             raise InputFileError(f"arquivo de reservas não encontrado: {self._path}") from err
         except (OSError, csv.Error) as err:
