@@ -28,6 +28,9 @@ O `README.md` da raiz é a especificação do projeto. Em caso de conflito entre
 - Cada defeito corrigido deve ter uma causa raiz identificada e um teste de regressão próprio. A causa raiz deve ser retornada no chat com uma frase apenas. 
 - Mesmo quando o `diagnosing-bugs` indicar ausência de seam correto, escreva o teste no seam mais próximo e registre a limitação neste chat de forma explicita.
 - Valores esperados dos testes novos vêm do README ou de contas derivadas das regras do README, nunca da lógica do código.
+- Os sintomas a diagnosticar são os descritos no README: testes fornecidos falhando e saída divergente da amostra de validação.
+- Apresente a lista de hipóteses e aguarde a resposta do usuário antes de testar qualquer uma.
+- Após cada commit, mostre o resultado do ciclo de feedback e aguarde o usuário liberar o próximo defeito.
 
 ## Restrições
 
@@ -36,8 +39,3 @@ O `README.md` da raiz é a especificação do projeto. Em caso de conflito entre
 ## Recomendações
 
 - Evite alterar o README, em especial o bloco entre `<!-- AMOSTRA:INICIO -->` e `<!-- AMOSTRA:FIM -->`. O README não proíbe isso explicitamente, mas os marcadores sugerem que esse bloco pode ser lido de forma automática na avaliação.
-
-## Mapa do código
-
-_A preencher na primeira exploração: módulos de `src/onfly_report/`, o que cada um faz e quais
-funções os testes importam._
