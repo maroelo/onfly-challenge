@@ -23,6 +23,7 @@ Skills usadas: `diagnosing-bugs` ([plugin skills for real engineers](https://git
 - Corrigiu um erro que ela mesma gerou, quando criou uma pasta indevida no ambiente.
 - Encontrou o bug 5 ao gerar o relatório do dataset real: comparou o resultado do CLI com um recálculo feito direto do CSV e viu que só 200 das 300 reservas eram lidas.
 - Corrigiu pessoalmente, por completo, os bugs 1, 4 e 5 e, parcialmente, o bug 3.
+- Fez alguns commits, que ele é citado como co autor. 
 
 ## O que eu fiz
 
@@ -38,6 +39,7 @@ Skills usadas: `diagnosing-bugs` ([plugin skills for real engineers](https://git
 - Perguntei se o relatório do dataset real já tinha sido gerado, o que levou a IA a encontrar o bug 5.
 - Corrigi pessoalmente o bug 2 por completo e, parcialmente, o bug 3.
 - Revisei e fiz o commit da correção do bug 5 (`f9d298a`), feita pela IA.
+- Fiz alguns commits que não citam o claude como co autor. 
 
 ## Artefatos e autoria
 
